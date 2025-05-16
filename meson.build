@@ -1,11 +1,10 @@
-project('boost_mp11',
-  ['cpp'],
-  version: '1.88.0',
-  default_options : ['cpp_std=c++20']
-  )
+project(
+    'boost_mp11',
+    ['cpp'],
+    version: '1.88.0',
+    default_options: ['cpp_std=c++20'],
+)
 
 inc = include_directories('include')
 
-boostmp11_dep = declare_dependency(
-  include_directories : inc,
-  )
+boostmp11_dep = declare_dependency(include_directories: inc)
